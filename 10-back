@@ -1,10 +1,2 @@
 #!/bin/bash
-if [ -z "$OLDPWD" ]; then
-    echo "Error/ No previous directory recorded."
-    return 1
-fi
-if ! cd "$OLDPWD"; then
-    echo "Error/ not change directory."
-    return 1
-fi
-pwd
+cd - 
