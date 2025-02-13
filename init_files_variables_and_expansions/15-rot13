@@ -1,0 +1,8 @@
+#!/bin/bash
+# Script to encode and decode text using rot13 encryption
+
+# Read input from standard input
+while IFS= read -r line; do
+  # Apply rot13 encryption
+  echo "$line" | tr 'A-Za-z' 'N-ZA-Mn-za-m'
+done
